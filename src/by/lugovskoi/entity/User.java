@@ -2,7 +2,18 @@ package by.lugovskoi.entity;
 
 public class User {
 
-    private String id;
+    private int id;
+
+    public User(int id, String name, String lastName, String passportId, Role role, int age) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.passportId = passportId;
+        this.role = role;
+        this.age = age;
+    }
+
+    public User(){};
 
     private String name;
 
@@ -13,6 +24,10 @@ public class User {
     private Role role;
 
     private int age;
+
+    public String getRoleAsString() {
+        return role.getTitle();
+    }
 
     public Role getRole() {
         return role;
@@ -46,11 +61,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

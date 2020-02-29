@@ -2,42 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a915015d-1a42-46c7-9af4-dd7bc080eac7" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hotel@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hotel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hotel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hotel: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hotel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hotel: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="request: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UFc8CXn8dsCWIyOQKhkQj9uvKd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="by.lugovskoi.service" />
       <recent name="by.lugovskoi.entity" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\privet\GitHub\ProjectHotel" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -125,7 +165,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574955622013</updated>
+      <workItem from="1582229599404" duration="74000" />
+      <workItem from="1582229745753" duration="5963000" />
+      <workItem from="1582796808739" duration="11843000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="80" y="178" key="#SQL_Dialects" timestamp="1582797079825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="80" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1582797079825" />
+    <state x="154" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582230485039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="154" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582230485039" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1582799268963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582799268963" />
+    <state x="276" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582231792866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="276" y="405" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1582231792866" />
+    <state x="342" y="278" key="FileChooserDialogImpl" timestamp="1582231217340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582231217340" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582230378930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1582230378930" />
+    <state x="0" y="166" key="SettingsEditor" timestamp="1582229658774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582229658774" />
+    <state x="456" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1582799634778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="456" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582799634778" />
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1582229609950">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582229609950" />
+    <state x="420" y="289" key="extract.method.dialog" timestamp="1582882120519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="420" y="289" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582882120519" />
   </component>
 </project>

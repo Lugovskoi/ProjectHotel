@@ -10,10 +10,17 @@ public class Number {
 
     private boolean booked;
 
-    public Number(int id, int roomsCount, RoomClass roomClass) {
+    public Number(int id, int roomsCount, RoomClass roomClass, boolean booked) {
         this.id = id;
         this.roomsCount = roomsCount;
         this.roomClass = roomClass;
+        this.booked = booked;
+    }
+
+    public Number(int roomsCount, RoomClass roomClass, boolean booked) {
+        this.roomsCount = roomsCount;
+        this.roomClass = roomClass;
+        this.booked = booked;
     }
 
     public void setRoomClass(RoomClass roomClass) {

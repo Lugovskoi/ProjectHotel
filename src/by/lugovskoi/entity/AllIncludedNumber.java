@@ -6,8 +6,14 @@ public class AllIncludedNumber extends Number {
 
     private boolean allowPets;
 
-    public AllIncludedNumber(int id, int roomsCount, RoomClass roomClass){
-        super(id, roomsCount, roomClass);
+    public AllIncludedNumber(int id, int roomsCount, RoomClass roomClass, boolean booked){
+        super(id, roomsCount, roomClass, booked);
+        this.allowSmoke = true;
+        this.allowPets = true;
+    }
+
+    public AllIncludedNumber(int roomsCount, RoomClass roomClass, boolean booked){
+        super(roomsCount, roomClass, booked);
         this.allowSmoke = true;
         this.allowPets = true;
     }

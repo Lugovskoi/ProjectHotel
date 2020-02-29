@@ -4,8 +4,8 @@ public class SmokeNumber extends Number {
 
     private boolean allowSmoke;
 
-    public SmokeNumber(int id, int roomsCount, RoomClass roomClass){
-        super(id, roomsCount, roomClass);
+    public SmokeNumber(int id, int roomsCount, RoomClass roomClass, boolean booked){
+        super(id, roomsCount, roomClass, booked);
         this.allowSmoke = true;
     }
 
