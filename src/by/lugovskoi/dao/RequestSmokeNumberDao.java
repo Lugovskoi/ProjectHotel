@@ -5,16 +5,16 @@ import by.lugovskoi.entity.Number;
 
 import java.sql.*;
 
-public class RequestDao implements Dao<Request> {
-    private static RequestDao INSTANCE;
+public class RequestSmokeNumberDao implements Dao<Request> {
+    private static RequestSmokeNumberDao INSTANCE;
 
-    private RequestDao(){}
+    private RequestSmokeNumberDao(){}
 
-    public static RequestDao getInstance() {
+    public static RequestSmokeNumberDao getInstance() {
         if (INSTANCE == null) {
-            synchronized (RequestDao.class){
+            synchronized (RequestSmokeNumberDao.class){
                 if(INSTANCE == null) {
-                    INSTANCE = new RequestDao();
+                    INSTANCE = new RequestSmokeNumberDao();
                 }
             }
         }
@@ -28,7 +28,7 @@ public class RequestDao implements Dao<Request> {
     private static final String FIND_QUERY =
             "SELECT * FROM request " +
                     "JOIN user ON request.user_id = user.id " +
-                    "JOIN all_included_number ON request.number_id = all_included_number.id " +
+                    "JOIN smoke_number ON request.number_id = smoke_number.id " +
                     "WHERE request.user_id = ?";
 
     private static final String DELETE_QUERY = "DELETE FROM request WHERE user_id = ?;";
@@ -61,10 +61,10 @@ public class RequestDao implements Dao<Request> {
             ResultSet resultSet = statement.executeQuery();
 
             if(resultSet.next()) {
-                request = new Request(new AllIncludedNumber(resultSet.getInt("all_included_number.id"),
-                        resultSet.getInt("all_included_number.rooms_count"),
-                        RoomClass.valueOf(resultSet.getString("all_included_number.room_class")),
-                        resultSet.getBoolean("all_included_number.booked")),
+                request = new Request(new AllIncludedNumber(resultSet.getInt("smoke_number.id"),
+                        resultSet.getInt("smoke_number.rooms_count"),
+                        RoomClass.valueOf(resultSet.getString("smoke_number.room_class")),
+                        resultSet.getBoolean("smoke_number.booked")),
 
                         resultSet.getDate("request.start_date"),
                         resultSet.getDate("request.end_date"),

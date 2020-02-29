@@ -5,16 +5,16 @@ import by.lugovskoi.entity.Number;
 
 import java.sql.*;
 
-public class RequestDao implements Dao<Request> {
-    private static RequestDao INSTANCE;
+public class RequestPetNumberDao implements Dao<Request> {
+    private static RequestPetNumberDao INSTANCE;
 
-    private RequestDao(){}
+    private RequestPetNumberDao(){}
 
-    public static RequestDao getInstance() {
+    public static RequestPetNumberDao getInstance() {
         if (INSTANCE == null) {
-            synchronized (RequestDao.class){
+            synchronized (RequestPetNumberDao.class){
                 if(INSTANCE == null) {
-                    INSTANCE = new RequestDao();
+                    INSTANCE = new RequestPetNumberDao();
                 }
             }
         }
@@ -28,7 +28,7 @@ public class RequestDao implements Dao<Request> {
     private static final String FIND_QUERY =
             "SELECT * FROM request " +
                     "JOIN user ON request.user_id = user.id " +
-                    "JOIN all_included_number ON request.number_id = all_included_number.id " +
+                    "JOIN pet_number ON request.number_id = pet_number.id " +
                     "WHERE request.user_id = ?";
 
     private static final String DELETE_QUERY = "DELETE FROM request WHERE user_id = ?;";
@@ -61,10 +61,10 @@ public class RequestDao implements Dao<Request> {
             ResultSet resultSet = statement.executeQuery();
 
             if(resultSet.next()) {
-                request = new Request(new AllIncludedNumber(resultSet.getInt("all_included_number.id"),
-                        resultSet.getInt("all_included_number.rooms_count"),
-                        RoomClass.valueOf(resultSet.getString("all_included_number.room_class")),
-                        resultSet.getBoolean("all_included_number.booked")),
+                request = new Request(new AllIncludedNumber(resultSet.getInt("pet_number.id"),
+                        resultSet.getInt("pet_number.rooms_count"),
+                        RoomClass.valueOf(resultSet.getString("pet_number.room_class")),
+                        resultSet.getBoolean("pet_number.booked")),
 
                         resultSet.getDate("request.start_date"),
                         resultSet.getDate("request.end_date"),

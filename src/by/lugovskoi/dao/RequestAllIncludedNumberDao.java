@@ -1,20 +1,23 @@
 package by.lugovskoi.dao;
 
 import by.lugovskoi.entity.*;
-import by.lugovskoi.entity.Number;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-public class RequestDao implements Dao<Request> {
-    private static RequestDao INSTANCE;
+public class RequestAllIncludedNumberDao implements Dao <Request> {
 
-    private RequestDao(){}
+    private static RequestAllIncludedNumberDao INSTANCE;
 
-    public static RequestDao getInstance() {
+    private RequestAllIncludedNumberDao(){}
+
+    public static RequestAllIncludedNumberDao getInstance() {
         if (INSTANCE == null) {
-            synchronized (RequestDao.class){
+            synchronized (RequestAllIncludedNumberDao.class){
                 if(INSTANCE == null) {
-                    INSTANCE = new RequestDao();
+                    INSTANCE = new RequestAllIncludedNumberDao();
                 }
             }
         }
